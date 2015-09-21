@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Fotag!</title>
+
+    <!--
+    All of your CSS must go in css/fotag.css. Do not add styles to individual elements.
+    All of your CSS must be your own -- you may not use third-party CSS, like Bootstrap.
+    -->
+    <link rel="stylesheet" href="css/fotag.css"/>
+    <style>
+        .marking-button {
+            float:right;
+        }
+        .marking-div-clear {
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+<!-- This header can be replaced -->
+
+<div id="app-container">
+    <!--
+         An attachment point to place all of your dynamically created content. Do not remove or
+         rename this div.
+    -->
+</div>
+
+<!-- A template for a file chooser, to select multiple files. See FileChooser in view.js. -->
+<template id="file-chooser">
+    <div class="choose-file">
+      <div class="choose-file-header">
+        Upload Your Image Now:
+      </div>
+      <input type="file" class="files-input" name="file_results[]" multiple />
+      <output id="list"></output>
+    </div>
+</template>
+
+<template id="toolbar-template">
+    <div class="toolbar">
+        <div class="header">
+          <h1>Fotag!</h1>
+          <h2>Import, organize, and rate your photos!</h2>
+        </div>
+        <div class="view-and-rating">
+          <div class="view-selection">
+              <div class="view-selection-header">
+                Select a View:
+              </div>
+              <img class="grid-but active">
+              <img class="list-but inactive">
+          </div>
+          <div class="rating-filter">
+            <div class="filter-header">
+              Filter By Rating:
+            </div>
+            <div class="toolbar-rate-wrap">
+              <span class="toolbar-rate">☆</span>
+              <span class="toolbar-rate">☆</span>
+              <span class="toolbar-rate">☆</span>
+              <span class="toolbar-rate">☆</span>
+              <span class="toolbar-rate">☆</span>
+            </div>
+          </div>
+        </div>
+    </div>
+</template>
+
+<template id="collection-template">
+    <div class="all-images"></div>
+</template>
+
+<template id="image-template">
+    <div class="img">
+      <img class="images">
+      <div class="metadata">
+        <div class="image-caption"></div>
+        <div class="image-name"></div>
+        <div class="image-date"></div>
+        <div class="image-rate-wrap">
+            <span class="image-rate">☆</span>
+            <span class="image-rate">☆</span>
+            <span class="image-rate">☆</span>
+            <span class="image-rate">☆</span>
+            <span class="image-rate">☆</span>
+        </div>
+      </div>
+    </div>
+</template>
+
+<div id="enlarge-image">
+  <img id="big-image">
+</div>
+
+<!-- Keep this here so TAs can run your unit tests -->
+<div id="unit-tests">
+
+    <!-- This button is for marking purposes to test your architecture. Do not remove it-->
+    <button class="marking-button">Mark Me!</button>
+    <div class="marking-div-clear"></div>
+
+    <a href="unit_tests.html">Run Unit Tests</a>
+</div>
+
+<script src="js/ext/underscore.js"></script>
+<script src="js/model.js"></script>
+<script src="js/view.js"></script>
+<script src="js/fotag.js"></script>
+</body>
+</html>

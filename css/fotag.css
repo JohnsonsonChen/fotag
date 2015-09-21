@@ -1,0 +1,379 @@
+/* Put any additional CSS here */
+h1 {
+	/*color: #931c14;*/
+	font-family: Gill Sans;
+	font-size: 50px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	/*color: #931c14;*/
+	font-family: Palatino Linotype;
+    font-size: 15px;
+    padding-bottom-bottom: 15px;
+}
+
+.view-selection-header {
+	/*color: #931c14;*/
+	font-family: Palatino Linotype;
+	padding-bottom: 10px;
+}
+
+.filter-header {
+	/*color: #931c14;*/
+	font-family: Palatino Linotype;
+	padding-bottom: 20px;
+}
+
+.choose-file-header {
+	font-family: Palatino Linotype;
+}
+
+#app-container {
+	margin-top: 161px;
+	background: #F4F4F4;
+}
+
+#enlarge-image {
+	width: 100%;
+    height: 100%;
+    display: none;
+    left: 0;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+}
+
+#big-image {
+    padding-top: 150px;
+    max-width: 90%;
+    opacity: 1;
+}
+
+.toolbar {
+    position: fixed;
+    background: #F4F4F4;
+    top: 0;
+    width: 100%;
+    z-index: 700;
+    border-bottom: 1px solid black;
+    height: 160px;
+}
+
+.toolbar > .view-and-rating {
+	display: inline-block;
+	padding: 25px 0;
+	float: right;
+}
+
+.toolbar > .view-and-rating > .rating-filter {
+	float: left;
+    padding: 0 20px 0 20px;
+    margin: 15px 0 10px;
+    width: 175px;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+}
+
+.toolbar > .header {
+	font-size: 12px;
+    padding: 10px 0px;
+    padding-bottom: 25px;
+    float: left;
+    height: 120px;
+}
+
+.toolbar > .view-and-rating > .view-selection {
+	float: left;
+    padding: 0px 20px 0px 20px;
+    margin: 15px 0 10px;
+    width: 175px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.grid-but.active {
+	border: 2px solid black;
+}
+
+.list-but.active {
+	border: 2px solid black;
+}
+
+.image-rate-wrap .image-rate {
+    cursor: pointer;
+}
+
+.toolbar-rate-wrap .toolbar-rate {
+	cursor: pointer;
+}
+
+.grid-but {
+	content:url('../images/grid.png');
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    width: 30px;
+	height: 30px;
+    margin: 0 8px 10px 0;
+    background: #efefef;
+    border: 2px solid #efefef;
+}
+
+.list-but {
+    content:url('../images/list.png');
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 8px;
+    width: 30px;
+	height: 30px;
+    margin: 0 8px 10px 0;
+    background: #efefef;
+    border: 2px solid #efefef;
+}
+
+
+
+/*file*/
+.choose-file {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #F4F4F4;
+    height: 100px;
+}
+
+.choose-file > .files-input {
+	display: inline-block;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 50px; 
+	text-align: center;
+}
+
+/*star rating ref: https://css-tricks.com/star-ratings/*/
+.image-rate-wrap {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.image-rate-wrap span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.image-rate-wrap span:hover:before,
+.image-rate-wrap span:hover ~ span:before {
+   color:  #F9D904;
+   content: "\2605";
+   position: absolute;
+}
+
+
+
+.toolbar-rate-wrap {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 1.6em;
+}
+.toolbar-rate-wrap span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.toolbar-rate-wrap span:hover:before,
+.toolbar-rate-wrap span:hover ~ span:before {
+   color:  #F9D904;
+   content: "\2605";
+   position: absolute;
+}
+/*end*/
+
+.all-images {
+	width: 100%;
+}
+
+.images {
+	/*float: left;*/
+	/*display: inline-block;*/
+	width: 250px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.img.grid {
+	display: inline-block;
+	width: 250px;
+	height: 300px;
+	padding-left: calc(16% - 120px);
+    padding-right: calc(16% - 120px);
+}
+
+.img.grid > .metadata > .image-date {
+	display: inline-block;
+	width: 90px;
+}
+
+.img.grid > .metadata > .image-name {
+	font-family: Palatino Linotype;
+}
+
+.img.list > .metadata > .image-name {
+	font-family: Palatino Linotype;
+}
+
+.metadata {
+	/*display: block;*/
+	/*height: 134px;*/
+    /*padding: 30px;*/
+    width: 230px;
+
+}
+
+.img.list {
+	display: block;
+	width: 600px;
+	height: 250px;
+	padding-left: calc(16% - 120px);
+}
+
+.img.list > div {
+	display: block;
+    padding: 10px;
+    width: 200px;
+    height: 500px;
+}
+
+.img.list > .images {
+	float: left;
+	/*width: 350px;
+	height: 300px;*/
+}
+.img.list > .metadata {
+	display: inline-block;
+    padding-top: 80px;
+    padding-left: 100px;
+    width: 110px;
+	height: 270px;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+	.img.grid {
+	  display: inline-block;
+	  padding-left: calc(16.2% - 121px);
+      padding-right: calc(16.2% - 121px);
+    }
+
+    .img.list {
+	  display: inline-block;
+    }
+
+}
+
+@media (max-width: 870px) {
+	.img.grid {
+	  display: inline-block;
+	  padding-left: calc(20% - 81px);
+      padding-right: calc(20% - 121px);
+    }
+    
+    .img.list {
+	  display: inline-block;
+    }
+
+}
+
+@media (max-width: 760px) {
+	h2 {
+		font-size: 14px;
+	}
+	.view-selection-header {
+		padding-top: 20px;
+        font-size: 13px;
+	}
+
+	.filter-header {
+		padding-top: 20px;
+		font-size: 13px;
+		padding-bottom: 25px;
+	}
+
+	.toolbar-rate-wrap {
+		font-size: 1em;
+	}
+
+    .toolbar > .view-and-rating > .rating-filter {
+    	padding: 0px 10px 0px 10px;
+    	width: 110px;
+    }
+
+	.toolbar > .view-and-rating > .view-selection {
+		padding: 0px 10px 0px 10px;
+		width: 110px;
+		border-left: none;
+        border-right: none;
+	}
+
+    .grid-but {
+    	height: 20px;
+    	width: 20px;
+    }
+
+    .list-but {
+        height: 20px;
+        width: 20px;
+
+    }
+
+	.img.grid {
+	  display: inline-block;
+	  padding-left: calc(50% - 125px);
+      padding-right: calc(50% - 155px);
+    }
+
+    .img.list {
+	  display: inline-block;
+	  padding-left: calc(50% - 125px);
+      padding-right: calc(50% - 155px);
+      height: 300px;
+      width: 250px;
+    }
+
+    .img.list > .images {
+    	float: none;
+    }
+
+    .img.list > .metadata {
+    	float: none;
+    	display: block;
+    	padding: 0px 0px 0px 0px;
+    	height: 100px;
+    }
+
+
+    .img.list > .metadata > .image-date {
+    	padding-top: 3px;
+    }
+}
+
+@media (max-width: 510px) {
+	h1 {
+		padding-top: 30px;
+	}
+
+	h2 {
+		display: none;
+	}
+}
+
