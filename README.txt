@@ -1,4 +1,3 @@
-Allows users to upload and rate theirs pictures by apply Factory design pattern and Model-View-Controller architecture
-
+An app that allows users to upload and rate theirs pictures
 
 Allows users to display theirs pictures using grid view and list view
